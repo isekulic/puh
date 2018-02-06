@@ -1,0 +1,59 @@
+Programming in Haskell (PUH), Academic Year 2014/15
+Homework Assignment
+
+Author: 0036472495
+
+Score: 9.58
+
+Reviewer: Antonio Paunović
+
+-------------------------------------------------------------------------------
+
+Imports: You can import just the functions you need in brackets.
+     For example: import Data.Char (ord, chr).
+     Thus avoiding the namespace pollution.
+
+Exercises: Here.
+
+Comments: More comments in the future, please.
+      See: http://www.haskell.org/haddock/doc/html/markup.html
+
+1.(1/1)
+When naming stuff in Haskell, use camel case. Instead of "f_err" "fErr".
+Everybody does it :)
+Code alignment is terrible.
+Align all guards | in the same line.
+It could have been done more succintly - see the official solution.
+And when programming in any language, it is usually avoided returning 
+boolean values explicitely. You return the boolean operation instead.
+
+2.(1/1)
+Same as above.
+
+3.(1/1)
+Correct, but you are using some redundant brackets.
+In the call:
+unwords ([.. 
+In Haskell you avoid putting funtion arguments in brackets and instead rely
+on operator precedence. It takes some time to get used to.
+
+4.(1/1)
+It's nice. The assignment it self was the ugly thing.
+
+5.(4/4)
+norm: Correct. But see this black magic:
+      norm (x, y) = sqrt (x ^2, y ^2)
+      You can destructure tuples using pattern matching. Just to wet your
+      appetite.
+add: Good.
+scalarMult: Yep!
+dot: Same.
+
+6.(1/1)
+Book example.
+
+7.(0.5/1)
+Wow, you are overdoing it! All characters should be included, not just letters.
+By the way, there is a isAlpha in Data.Char function.
+
+
